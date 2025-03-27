@@ -8,7 +8,7 @@ class TextWidget:
         pos: tuple (x, y)
         size: font size
         color: text color
-        font_weight: choose from "Regular" or "Bold" (extendable)
+        font_weight: "Regular", "Bold", etc.
         """
         self.text = text
         self.pos = pos
@@ -18,7 +18,7 @@ class TextWidget:
         self.font = self.load_font()
 
     def load_font(self):
-        # Map font weight to a filename. Adjust paths as needed.
+        # Map font weight to a file in the /fonts folder.
         font_files = {
             "Regular": "fonts/Inter-Regular.ttf",
             "Bold": "fonts/Inter-Bold.ttf"
